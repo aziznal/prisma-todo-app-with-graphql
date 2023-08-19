@@ -2,11 +2,20 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 
 import PageLayout from "@/client/components/page-layout";
+import { Hydrate, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
+
+import { queryClient } from "@/client/react-query/query-client";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <PageLayout>
-      <Component {...pageProps} />{" "}
-    </PageLayout>
+    <QueryClientProvider client={queryClient}>
+      <PageLayout>
+        <Component {...pageProps} />{" "}
+      </PageLayout>
+
+      <Hydrate state={pageProps.dehydratedState} />
+      <ReactQueryDevtools />
+    </QueryClientProvider>
   );
 }
