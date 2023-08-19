@@ -2,8 +2,9 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 
 import PageLayout from "@/client/components/page-layout";
-import { Hydrate, QueryClientProvider } from "react-query";
-import { ReactQueryDevtools } from "react-query/devtools";
+import { Hydrate, QueryClientProvider } from "@tanstack/react-query";
+
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 import { queryClient } from "@/client/react-query/query-client";
 
