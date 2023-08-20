@@ -1,3 +1,11 @@
+# Description
+
+This is a todo app made using nextjs, prisma, sqlite, graphql, and tanstack-query. The aim was for me to gain more experience with this specific combination of tools as it seems to enable a very robust and rapid fullstack app development environment.
+
+My main issue has been graphql to which I'm relatively new. here's a graph: https://link.excalidraw.com/l/78i70B6Ljsy/7Y0Pmv89JPz
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
