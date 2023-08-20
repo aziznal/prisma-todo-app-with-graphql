@@ -3,7 +3,7 @@ import { Field, ID, ObjectType } from "type-graphql";
 @ObjectType()
 export class Todo {
   @Field(() => ID)
-  id!: string;
+  id!: number;
 
   @Field(() => String)
   title!: string;

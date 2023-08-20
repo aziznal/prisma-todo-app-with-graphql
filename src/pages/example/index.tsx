@@ -13,5 +13,9 @@ export default function Example() {
     return <>Error</>;
   }
 
-  return <>Hello World</>;
+  return (
+    <div className="h-full items-center justify-center flex">
+      {JSON.stringify(todoQuery.data, null, 4)}
+    </div>
+  );
 }
